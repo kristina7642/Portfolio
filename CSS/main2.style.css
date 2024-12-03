@@ -1,0 +1,156 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #fff3e0, #ffffff); /* Легкий градиент фона от светло-оранжевого к белому */
+    color: #ff7b00;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 50px;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+p{
+    font-size: 20px;
+}
+header {
+    background: linear-gradient(to right, #ff9800, #ffc107); 
+    display: flex; /* Используем Flexbox для выравнивания элементов */
+            align-items: center; /* Центрируем элементы по вертикали */
+            justify-content: space-between; /* Распределяем пространство между элементами */
+            padding: 0 30px; /* Отступы внутри шапки */
+            color: white; 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header  li {
+    display: inline; 
+    margin: 0 10px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+header  a {
+    text-decoration: none; 
+    color: white; 
+}
+
+header  a:hover {
+    text-decoration: underline; 
+}
+
+main {
+    padding: 40px;
+    display: flex;
+            flex-direction: column;
+            align-items: center; /* Центрирование по горизонтали */
+            justify-content: center; /* Центрирование по вертикали */
+            min-height: 100vh; /* Занять всю высоту экрана */
+            margin: 0;
+}
+
+
+.project {
+    display: flex;
+            flex-direction: column; /* Расположение карточек в столбик */
+            align-items: center;
+}
+
+.site-card {
+    border: 1px solid #ccc; /* Рамка для карточки */
+    border-radius: 8px; /* Закругленные углы */
+    padding: 16px; /* Внутренние отступы */
+    margin-bottom: 40px;
+    width: 580px; 
+    height: 780px; 
+    text-align: center; /* Центрируем текст внутри карточки */
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для эффекта поднятости */
+}
+
+.site-card2 {
+    border: 1px solid #ccc; /* Рамка для карточки */
+    border-radius: 8px; /* Закругленные углы */
+    padding: 16px; /* Внутренние отступы */
+    margin-bottom: 40px;
+    width: 580px; 
+    height: 720px; 
+    text-align: center; /* Центрируем текст внутри карточки */
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для эффекта поднятости */
+}
+.site-card3 {
+    border: 1px solid #ccc; /* Рамка для карточки */
+    border-radius: 8px; /* Закругленные углы */
+    padding: 16px; /* Внутренние отступы */
+    margin-bottom: 40px;
+    width: 580px; 
+    height: 760px; 
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+.site-card4 {
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    padding: 16px; 
+    margin-bottom: 40px;
+    width: 580px; 
+    height: 500px; 
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+.screenshot {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 4px; 
+}
+
+h2 {
+    margin: 10px 0; 
+    font-size: 35px;
+    color: rgba(242, 129, 23, 0.9); /* Цвет текста */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+p {
+    font-size: 20px; 
+    text-align:center;
+}
+
+main a {
+    display: inline-block; /* Делаем ссылку блочным элементом для настройки отступов */
+    margin: 0;
+    padding: 10px 15px; 
+    color: #ffffff;
+    background: linear-gradient(to right, #ff9800, #ffc107);
+    text-decoration: none; 
+    border-radius: 4px; 
+    box-shadow: 0 4px 10px rgba(5, 5, 5, 0.1); 
+    text-align: center;
+    position: relative;
+    overflow: hidden; 
+}
+main a:hover{
+    transform: translateY(-5px);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(to right, #ff9800, #ffc107);
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
+}
+main img{
+    width: 480px;  
+}
