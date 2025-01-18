@@ -1,0 +1,221 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #fff3e0, #ffffff); 
+    color: #ff7b00;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 50px;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+.about-me h2{  
+    border-bottom: 2px solid #ff9800; 
+    padding-bottom: 10px; 
+    padding-top: 10px; 
+    margin: 0;
+    font-size: 40px;
+}
+.about-me p{
+    font-size: 25px;
+    padding-left: 20px;
+}
+header {
+    background: linear-gradient(to right, #ff9800, #ffc107); 
+    display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            padding: 0 30px; /* Отступы внутри шапки */
+            color: white; 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+header  li {
+    display: inline; 
+    margin: 0 10px;
+    margin-left: 20px;
+   
+}
+
+header  a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 20px;
+}
+.contact p{
+    font-size: 20px;
+}
+header  a:hover {
+    text-decoration: underline; 
+}
+
+main {
+    padding: 25px;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+.about-me {
+    width: 60%;
+    text-decoration: none;
+    padding-left: 20px;
+}
+.description{
+    background: linear-gradient(to right, #ffc745, #ffaa43); 
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.skills{
+    background: linear-gradient(to right, #ffc745, #ffaa43); 
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.contact{
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    display: flex;
+    text-decoration: none;
+}
+.projects-gallery {
+  width: 25%; 
+  padding: 10px;
+  padding-left: 50px;
+  margin-top: 0;
+  height: 580px;
+  border-radius: 20px;
+  margin-right: 80px;
+}
+
+
+.c-preview {
+  background: #f17f14;
+  background: -moz-linear-gradient(-45deg, #ec672a 0%, #000000 25%, #f76440 50%, #f3bb04 75%, #f54703 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #fda604 0%,#000000 25%,#eb4b0b 50%,#ddf502 75%,#ffd209 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #faa72a 0%,#f37703 25%,#ff4f1a 50%,#f7d30d 75%,#f81616 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-size: 400% 400%;
+  background-repeat: no-repeat;
+  display: flex;
+  width: 320px;
+  height: 320px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  transition: .5s all;
+  border-radius: 180px;
+  margin-bottom: 20px;
+left: 20px;
+box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Снизу и вправо */
+  img{
+    border-radius: 180px;
+  }
+  &:hover {
+    background-position: 100% 100%;
+    
+    &__title {
+      text-shadow: 0 0 20px rgb(243, 146, 18);
+    }
+  }
+}
+
+.contact p a:hover {
+    text-decoration: underline;
+}
+
+.projects, .gallery{
+    margin-bottom: 40px;
+    padding: 0;
+    background: white;
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(5, 5, 5, 0.2); 
+    text-align: center;
+    position: relative;
+    overflow: hidden; 
+}
+.projects a, .gallery a{
+    text-decoration:none;
+}
+.projects:hover , .gallery:hover {
+    transform: translateY(-5px);
+}
+.projects h2, .gallery h2 {
+    font-size: 2rem; /* Размер шрифта заголовка */
+    color: rgba(242, 129, 23, 0.9); /* Цвет текста */
+    transition: color 0.3s ease, transform 0.3s ease; /* Плавный переход цвета и трансформации */
+}
+
+.projects:hover h2, .gallery:hover h2 {
+    color: rgba(247, 200, 100, 0.9);  /* Цвет текста при наведении */
+    transform: scale(1.1); /* Увеличение текста при наведении */
+}
+.projects::after, .gallery::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 100%;
+    height: 5px; /* Высота линии под заголовком */
+    background: #f7c616; /* Цвет линии */
+    transform: translateX(-50%) scaleX(0); /* Начальное состояние (скрыто) */
+    transition: transform 0.3s ease; /* Плавный переход для линии */
+}
+
+.projects:hover::after, .gallery:hover::after {
+    transform: translateX(-50%) scaleX(1); /* Показываем линию при наведении */
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(to right, #ff9800, #ffc107);
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
+ height: 67px;
+ margin-top: 0.5vw;
+}
+
+
+
+@media (max-width: 1240px){
+    .c-preview {
+        position: relative;
+        left: -1vw;
+    }
+    .projects-gallery{
+        width: 30%;
+    }
+    .contact p{
+flex-direction: column;
+    }
+    .contact {
+        position: relative;
+     left: 5vw;
+     width: 300px;
+    }
+    .contact p a img{
+        position: absolute;
+        top: 6vw;
+        right: 24vw;
+    }
+}
